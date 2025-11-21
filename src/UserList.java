@@ -13,7 +13,7 @@ public class UserList
         }
     }
 
-    public ArrayList<User> getUsers()
+    public ArrayList<User> getUsers(User bob)
     {
         return u;
     }
