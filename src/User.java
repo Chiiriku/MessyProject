@@ -1,25 +1,17 @@
 public class User
 {
-    public int c_id;
-    public String c_nam;
+  public int c_id;
+  public String c_nam;
 
-
-    public User(int id, String name){
-        c_id = id;
-        if(name.length() <= 0 || name.length() >= 100) // Testing length
-        {
-
-        }
-        c_nam = name;
-    }
-
-    public void setC_name(String name)
+  public User(int id, String name)
+  {
+    c_id = id;
+    if ((name.length() <= 0) || (name.length() >= 100)) // Testing length
     {
-        if(name.length() < 0)
-        {
-        }
-        c_nam = name;
+
     }
+    c_nam = name;
+  }
 
       public int getId(){ return c_id; }
 
