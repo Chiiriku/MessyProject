@@ -2,19 +2,18 @@ import java.util.ArrayList;
 
 public class UserList extends ArrayList<User>
 {
-    public ArrayList<User> u = new ArrayList<User>();
+  public ArrayList<User> u = new ArrayList<User>();
 
-    public void add(User u)
+  public void add(User u)
+  {
+    this.u.add(u);
+    if (u == null)
     {
-        this.u.add(u);
-        if(u == null)
-        {
-            return;
-        }
     }
+  }
 
-    public ArrayList<User> getUsers(User bob)
-    {
-        return u;
-    }
+  public ArrayList<User> getUsers(User bob)
+  {
+    return u;
+  }
 }

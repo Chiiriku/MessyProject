@@ -13,16 +13,22 @@ public class User
     c_nam = name;
   }
 
-      public int getId(){ return c_id; }
+  public int getId()
+  {
+    return c_id;
+  }
 
-    public String getName(){ return c_nam; }
+  public String getName()
+  {
+    return c_nam;
+  }
 
-
-    @Override
-    public boolean equals(Object o){
-        if(o instanceof User u){
-            return u.c_nam == c_nam;
-        }
-        return false;
+  @Override public boolean equals(Object o)
+  {
+    if (o instanceof User u)
+    {
+      return u.c_nam == c_nam;
     }
+    return false;
+  }
 }
