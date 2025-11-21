@@ -6,25 +6,24 @@ public class User
 
     public User(int id, String name){
         c_id = id;
-        if(name.length() < 0 || name.length() > 100) // Testing length
+        if(name.length() <= 0 || name.length() >= 100) // Testing length
         {
-            return; //If string is invalid, we dont try to store it
+
         }
         c_nam = name;
     }
 
-    public void setC_nam(String n)
+    public void setC_name(String name)
     {
-        if(n.length() < 0)
+        if(name.length() < 0)
         {
-            return; //If string is invalid, we dont try to store it
         }
-        c_nam = n;
+        c_nam = name;
     }
 
-      public int geti(){ return c_id; }
+      public int getId(){ return c_id; }
 
-    public String getn(){ return c_nam; }
+    public String getName(){ return c_nam; }
 
 
     @Override
